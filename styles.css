@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+:root{
+    --GREEN: hsl(75, 94%, 57%);
+    --WHITE: hsl(0, 0%, 100%);
+    --GREY-700: hsl(0, 0%, 20%);
+    --GREY-800: hsl(0, 0%, 12%);
+    --GREY-900: hsl(0, 0%, 8%);
+}
+body{
+    font-family: "Inter", serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--GREY-900);
+}
+.attribution {
+    font-size: 11px;
+    align-self: flex-end;
+    justify-self: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--WHITE);
+    gap: 1rem;
+}
+.attribution a { 
+    color: rgb(155, 85, 155);
+    text-decoration: none;
+}
+.card{
+    background-color: var(--GREY-800);
+    width: 30rem;
+    height: 52.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card img{
+    width: 8rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+.card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.card__text h1{
+    color: var(--WHITE);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.card__text p{
+    color: var(--GREEN);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.card__p{
+    color: var(--WHITE);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+button{
+    width: 25rem;
+    height: 4rem;
+    background-color: var(--GREY-700);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    border: none;
+}
+button a{
+    color: var(--WHITE);
+    text-decoration: none;
+    font-weight: bold;
+}
+button:active,button:hover{
+    background-color: var(--GREEN);
+    cursor: pointer;
+}
+button:active a,button:hover a{
+    color: var(--GREY-900);
+}

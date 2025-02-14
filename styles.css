@@ -80,7 +80,7 @@ body{
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
-button{
+.button{
     width: 25rem;
     height: 4rem;
     background-color: var(--GREY-700);
@@ -88,16 +88,18 @@ button{
     margin-bottom: 1.5rem;
     text-decoration: none;
     border: none;
+    display: grid;
+    place-content: center;
 }
-button a{
+.button a{
     color: var(--WHITE);
     text-decoration: none;
     font-weight: bold;
 }
-button:active,button:hover{
+.button:active,button:hover{
     background-color: var(--GREEN);
     cursor: pointer;
 }
-button:active a,button:hover a{
+.button:active a,button:hover a{
     color: var(--GREY-900);
 }

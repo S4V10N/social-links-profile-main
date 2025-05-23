@@ -46,9 +46,6 @@ body{
 .attribution p {
     width: max-content;
 }
-footer {
-    width: 100%;
-}
 .card{
     background-color: var(--GREY-800);
     width: 32rem;

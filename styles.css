@@ -17,44 +17,50 @@ html{
 }
 body{
     font-family: "Inter", serif;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 6rem;
     position: relative;
     background-color: var(--GREY-900);
 }
 .attribution {
-    font-size: 11px;
     align-self: flex-end;
     justify-self: center;
-    position: absolute;
-    bottom: 0;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 30rem;
     display: flex;
+    font-size: 1.4rem;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--WHITE);
     gap: 1rem;
+}
+.attribution img  {
+    display: none;
 }
 .attribution a { 
     color: rgb(155, 85, 155);
     text-decoration: none;
 }
+.attribution p {
+    width: max-content;
+}
+footer {
+    width: 100%;
+}
 .card{
     background-color: var(--GREY-800);
-    width: 30rem;
-    height: 52.5rem;
+    width: 32rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
+    padding: 2rem 0 1rem 0;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 .card img{
-    width: 8rem;
+    width: 9rem;
     border-radius: 50%;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
@@ -67,28 +73,29 @@ body{
 }
 .card__text h1{
     color: var(--WHITE);
-    font-size: 2.4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 .card__text p{
     color: var(--GREEN);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .card__p{
     color: var(--WHITE);
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
 }
 .button{
-    width: 25rem;
-    height: 4rem;
+    width: 27rem;
+    height: 4.5rem;
     background-color: var(--GREY-700);
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
     text-decoration: none;
     border: none;
     display: grid;
+    font-size: 1.4rem;
     place-content: center;
 }
 .button a{
